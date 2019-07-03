@@ -12,17 +12,17 @@
         <Grid Height="55" Background="#83c3d7" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Center" FontSize="36" Margin="0,10,0,0" Text="                                 Vehicle Servicing Management System" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" Width="1262"/>
         <Grid Margin="0,79,0,581">
-            <Button Content="Home" Background=" #a2bbc2 " FontSize="22" Margin="60,0,0,0" Height="59"/>
-            <Button Content="About Us" Background=" #a2bbc2 " FontSize="22" Margin="1002,0,0,0" Width="217" Height="59"/>
-            <Button Content="Services Offered" Background=" #a2bbc2 " FontSize="22" Margin="512,0,0,0" Width="217" Height="59"/>
+            <Button Content="Home" Background=" #a2bbc2 " FontSize="22" Margin="58,1,0,0" Height="39" Click="Button_Click" Width="105" VerticalAlignment="Top"/>
+            <Button Content="About Us" Background=" #a2bbc2 " FontSize="22" Margin="1006,1,0,0" Width="219" Height="39" VerticalAlignment="Top" Click="Button_Click_5"/>
+            <Button Content="Services Offered" Background=" #a2bbc2 " FontSize="22" Margin="508,1,0,0" Width="229" Height="39" Click="Button_Click_1" VerticalAlignment="Top"/>
         </Grid>
         <Grid Margin="0,144,0,505">
-            <Button Content="Staff Login" Margin="136,0,0,0" Height="45" FontSize="20" Width="344" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top">
+            <Button Content="Staff Login" Click="Button_Click_2" Margin="136,0,0,0" Height="45" FontSize="20" Width="344" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top">
                 <Button.RenderTransform>
                     <CompositeTransform ScaleY="1"/>
                 </Button.RenderTransform>
             </Button>
-            <Button Content="Customer Login" Margin="728,0,0,0" Height="45" FontSize="20" Width="344" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top">
+            <Button Content="Customer Login" Margin="728,0,0,0" Height="45" FontSize="20" Width="344" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top" Click="Button_Click_4">
                 <Button.RenderTransform>
                     <CompositeTransform ScaleY="1"/>
                 </Button.RenderTransform>

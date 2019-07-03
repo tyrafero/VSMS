@@ -9,32 +9,21 @@
     Background="#417e91">
 
     <Grid>
-        <Grid Height="55"
-              Background=" #83c3d7  " 
-              VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Center" FontSize="36" Margin="0,10,0,0" Text="Vehicle Servicing Management System" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" Width="1262"/>
-        <Grid Margin="0,79,0,602">
-            <Button Content="Home" Background=" #a2bbc2 " FontSize="22" Margin="60,0,0,0"/>
-            <Button Content="About Us" Background=" #a2bbc2 " FontSize="22" Margin="1002,0,0,0" Width="217"/>
-            <Button Content="Services Offered" Background=" #a2bbc2 " FontSize="22" Margin="512,0,0,0" Width="217"/>
+        <Grid Height="55" Background="#83c3d7" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Center" FontSize="36" Margin="0,10,0,0" Text="                                 Vehicle Servicing Management System" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" Width="1262"/>
+        <Grid Margin="0,79,0,581">
+            <Button Content="Home" Background=" #a2bbc2 " FontSize="22" Margin="58,1,0,0" Height="39"  Width="105" VerticalAlignment="Top" Click="Button_Click"/>
+            <Button Content="About Us" Background=" #a2bbc2 " FontSize="22" Margin="1002,1,0,0" Width="219" Height="39" VerticalAlignment="Top" Click="Button_Click_2"/>
+            <Button Content="Services Offered" Background=" #a2bbc2 " FontSize="22" Margin="508,1,0,0" Width="229" Height="39"  VerticalAlignment="Top" Click="Button_Click_1"/>
         </Grid>
-        <Grid Margin="0,144,0,534">
-            <Button Content="Staff Login" Margin="140,-3,0,0" Height="45" FontSize="20" Width="344" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top">
-                <Button.RenderTransform>
-                    <CompositeTransform ScaleY="1"/>
-                </Button.RenderTransform>
-            </Button>
-            <Button Content="Customer Login" Margin="738,-3,0,0" Height="45" FontSize="20" Width="344" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top">
-                <Button.RenderTransform>
-                    <CompositeTransform ScaleY="1"/>
-                </Button.RenderTransform>
-            </Button>
+        <Grid Margin="0,144,0,100">
+
+
         </Grid>
         <Grid Margin="0,625,0,10" RenderTransformOrigin="0.5,0.5">
             <Grid.RenderTransform>
                 <CompositeTransform ScaleY="-1"/>
             </Grid.RenderTransform>
         </Grid>
-
     </Grid>
 </Page>

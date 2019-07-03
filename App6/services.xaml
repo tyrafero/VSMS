@@ -6,19 +6,27 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="#417e91">
+     Background="  #417e91 ">
 
     <Grid>
-
         <Grid Height="55" Background="#83c3d7" VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Center" FontSize="36" Margin="0,10,0,0" Text="Vehicle Servicing Management System" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" Width="1262"/>
-        <Grid Margin="0,79,0,602">
-            <Button Content="Home" Background=" #a2bbc2 " FontSize="22" Margin="60,0,0,0"/>
-            <Button Content="About Us" Background=" #a2bbc2 " FontSize="22" Margin="1002,0,0,0" Width="217"/>
-            <Button Content="Services Offered" Background=" #a2bbc2 " FontSize="22" Margin="512,0,0,0" Width="217"/>
+        <TextBlock HorizontalAlignment="Center" FontSize="36" Margin="0,10,0,0" Text="                                 Vehicle Servicing Management System" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" Width="1262"/>
+        <Grid Margin="0,79,0,581">
+            <Button Content="Home" Background=" #a2bbc2 " FontSize="22" Margin="58,1,0,0" Height="39"  Width="105" VerticalAlignment="Top" Click="Button_Click"/>
+            <Button Content="About Us" Background=" #a2bbc2 " FontSize="22" Margin="1002,1,0,0" Width="219" Height="39" VerticalAlignment="Top" Click="Button_Click_2"/>
+            <Button Content="Services Offered" Background=" #a2bbc2 " FontSize="22" Margin="508,1,0,0" Width="229" Height="39"  VerticalAlignment="Top" Click="Button_Click_1"/>
         </Grid>
         <Grid Margin="0,144,0,100">
-                
+            <TextBlock HorizontalAlignment="Left" Opacity="90"  FontSize="18"  Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="255" Width="416" RenderTransformOrigin="0.49,0.494"><Run Text="Oil change and filter replacement:"/><LineBreak/><Run/><LineBreak/><Run Text="Your engine oil should be checked and changed regularly or according to the manufacturers specifications. For this, KU Car Service offers you an all-round professional workshop service and a wide range of high quality KU products."/></TextBlock>
+            <TextBlock HorizontalAlignment="Left" Opacity="90"  FontSize="18"  Margin="439,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="277" Width="408"><Run Text="Battery check:"/><LineBreak/><Run/><LineBreak/><Run Text="Is your car battery always ready for action or does it occasionally need a bit of help? KU Car Service workshops will check the condition of your car battery. Should you ever need a new one, we will be glad to fit it for you and dispose of the old one."/></TextBlock>
+            <TextBlock HorizontalAlignment="Left" Opacity="90"  FontSize="18"  Margin="867,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="277" Width="408"><Run Text="Tyre Changing:"/><LineBreak/><Run/><LineBreak/><Run Text="KU workshops are equipped with the necessary equipment to ensure the correct fitting and balancing of wheels and tyres. The staff of your Bosch Car Service can support you even in the selection and purchase of new tyres for your vehicle. "/></TextBlock>
+            <TextBlock HorizontalAlignment="Left" Opacity="90"  FontSize="18"  Margin="10,261,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="208" Width="828"><Run Text="Service and Repair according to the scheme:"/><LineBreak/><Run/><LineBreak/><Run Text="If you are having problems with any of the mechanical systems in your vehicle, Bosch Car Service workshops can be relied upon to diagnose the problem and put things right. In addition Bosch Car Service workshops offer a range of service packages to suit your requirements including the Bronze, Silver, Gold and Vehicle Manufacturer's Service packages."/></TextBlock>
+            <Rectangle HorizontalAlignment="Left" Height="234" Margin="10,10,0,0" Stroke="Black" StrokeThickness="2" VerticalAlignment="Top" Width="410"/>
+            <Rectangle HorizontalAlignment="Left" Height="234" Margin="425,10,0,0" Stroke="Black" StrokeThickness="2" VerticalAlignment="Top" Width="417"/>
+            <Rectangle HorizontalAlignment="Left" Height="234" Margin="847,10,0,0" Stroke="Black" StrokeThickness="2" VerticalAlignment="Top" Width="437"/>
+            <Rectangle HorizontalAlignment="Left" Margin="10,261,0,42" Stroke="Black" StrokeThickness="2" Width="830"/>
+
+
         </Grid>
         <Grid Margin="0,625,0,10" RenderTransformOrigin="0.5,0.5">
             <Grid.RenderTransform>

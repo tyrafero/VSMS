@@ -9,22 +9,30 @@
     Background="#417e91">
 
     <Grid>
-        <Grid Height="55"
-              Background=" #83c3d7  " 
-              VerticalAlignment="Top"/>
-        <TextBlock HorizontalAlignment="Center" FontSize="36" Margin="0,10,0,0" Text="Vehicle Servicing Management System" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" Width="1262"/>
-        <Grid Margin="0,79,0,602">
-            <Button Content="Home" Background=" #a2bbc2 " FontSize="22" Margin="60,0,0,0"/>
-            <Button Content="About Us" Background=" #a2bbc2 " FontSize="22" Margin="1002,0,0,0" Width="217"/>
-            <Button Content="Services Offered" Background=" #a2bbc2 " FontSize="22" Margin="512,0,0,0" Width="217"/>
+        <Grid Height="55" Background="#83c3d7" VerticalAlignment="Top"/>
+        <TextBlock HorizontalAlignment="Center" FontSize="36" Margin="0,10,0,0" Text="                                 Vehicle Servicing Management System" TextWrapping="Wrap" VerticalAlignment="Top" Height="45" Width="1262"/>
+        <Grid Margin="0,79,0,581">
+            <Button Content="Home" Background=" #a2bbc2 " FontSize="22" Margin="58,1,0,0" Height="39"  Width="105" VerticalAlignment="Top" Click="Button_Click"/>
+            <Button Content="About Us" Background=" #a2bbc2 " FontSize="22" Margin="1002,1,0,0" Width="219" Height="39" VerticalAlignment="Top" Click="Button_Click_2"/>
+            <Button Content="Services Offered" Background=" #a2bbc2 " FontSize="22" Margin="508,1,0,0" Width="229" Height="39"  VerticalAlignment="Top" Click="Button_Click_1"/>
         </Grid>
-        <Grid Margin="0,144,0,534">
-            <Button Content="Staff Login" Margin="140,-3,0,0" Height="45" FontSize="20" Width="344" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top">
+        <Grid Margin="0,144,0,100">
+
+
+        </Grid>
+        <Grid Margin="0,625,0,10" RenderTransformOrigin="0.5,0.5">
+            <Grid.RenderTransform>
+                <CompositeTransform ScaleY="-1"/>
+            </Grid.RenderTransform>
+        </Grid>
+
+        <Grid Margin="0,144,0,510">
+            <Button Content="Staff Login"  Margin="140,-3,0,0" Height="45" FontSize="20" Width="344" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top" Click="Button_Click_3">
                 <Button.RenderTransform>
                     <CompositeTransform ScaleY="1"/>
                 </Button.RenderTransform>
             </Button>
-            <Button Content="Customer Login" Margin="738,-3,0,0" Height="45" FontSize="20" Width="344" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top">
+            <Button Content="Customer Login" Margin="738,-3,0,0" Height="45" FontSize="20" Width="344" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top" Click="Button_Click_4">
                 <Button.RenderTransform>
                     <CompositeTransform ScaleY="1"/>
                 </Button.RenderTransform>
@@ -35,7 +43,20 @@
                 <CompositeTransform ScaleY="-1"/>
             </Grid.RenderTransform>
         </Grid>
-        <GridView Margin="0,191,10,100"/>
+        <Grid Margin="0,215,0,95">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBlock HorizontalAlignment="Left" FontSize="22" Margin="284,87,0,0" Text="Username:" TextWrapping="Wrap" VerticalAlignment="Top" Height="37" Width="163" RenderTransformOrigin="0.152,0.669"/>
+            <TextBlock HorizontalAlignment="Left" FontSize="22" Margin="284,141,0,0" Text="Contact no.:" TextWrapping="Wrap" VerticalAlignment="Top" Height="37" Width="163" RenderTransformOrigin="0.287,0.581"/>
+            <TextBox HorizontalAlignment="Left" Margin="455,79,0,0" FontSize="22" Text="Username" Height="37" Width="232" VerticalAlignment="Top"/>
+            <Button FontSize="22" Content="Register:" Margin="411,335,0,0" VerticalAlignment="Top" Width="229" Height="42"/>
+            <TextBlock HorizontalAlignment="Left" FontSize="22" Margin="284,190,0,0" Text="Car Model:" TextWrapping="Wrap" VerticalAlignment="Top" Height="37" Width="163" RenderTransformOrigin="0.152,0.669"/>
+            <TextBox HorizontalAlignment="Left" Margin="455,182,0,0" FontSize="22" Text="Model" Height="37" Width="232" VerticalAlignment="Top"/>
+            <TextBlock HorizontalAlignment="Left" FontSize="22" Margin="284,248,0,0" Text="Number plate:" TextWrapping="Wrap" VerticalAlignment="Top" Height="37" Width="163" RenderTransformOrigin="0.152,0.669"/>
+            <TextBox HorizontalAlignment="Left" Margin="455,133,0,0" FontSize="22" Text="Contact no." Height="37" Width="232" VerticalAlignment="Top"/>
+            <TextBox HorizontalAlignment="Left" Margin="455,240,0,0" FontSize="22" Text="Number plate" Height="37" Width="232" VerticalAlignment="Top"/>
+        </Grid>
 
     </Grid>
 </Page>

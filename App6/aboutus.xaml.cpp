@@ -5,6 +5,10 @@
 
 #include "pch.h"
 #include "aboutus.xaml.h"
+#include "MainPage.xaml.h"
+#include "services.xaml.h"
+#include "customer.xaml.h"
+#include "staff.xaml.h"
 
 using namespace App6;
 
@@ -24,4 +28,22 @@ using namespace Windows::UI::Xaml::Navigation;
 aboutus::aboutus()
 {
 	InitializeComponent();
+}
+
+
+void App6::aboutus::Button_Click(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
+{
+	Frame->Navigate(MainPage::typeid);
+}
+
+
+void App6::aboutus::Button_Click_1(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
+{
+	Frame->Navigate(services::typeid);
+}
+
+
+void App6::aboutus::Button_Click_2(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
+{
+	Frame->Navigate(aboutus::typeid);
 }
