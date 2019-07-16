@@ -25,8 +25,8 @@
                 <CompositeTransform ScaleY="-1"/>
             </Grid.RenderTransform>
         </Grid>
-    
-    <Grid Margin="0,144,0,510">
+
+        <Grid Margin="0,144,0,510">
             <Button Content="Staff Login"  Margin="140,-3,0,0" Height="45" FontSize="20" Width="344" RenderTransformOrigin="0.5,0.5" VerticalAlignment="Top" Click="Button_Click_3">
                 <Button.RenderTransform>
                     <CompositeTransform ScaleY="1"/>
@@ -46,9 +46,10 @@
         <Grid Margin="0,215,0,95">
             <TextBlock HorizontalAlignment="Left" FontSize="22" Margin="298,83,0,0" Text="Username:" TextWrapping="Wrap" VerticalAlignment="Top" Height="37" Width="163" RenderTransformOrigin="0.287,0.581"/>
             <TextBlock HorizontalAlignment="Left" FontSize="22" Margin="298,141,0,0" Text="Password:" TextWrapping="Wrap" VerticalAlignment="Top" Height="37" Width="163" RenderTransformOrigin="0.287,0.581"/>
-            <TextBox HorizontalAlignment="Left" Margin="455,83,0,0" FontSize="22" Text="Username" Height="37" Width="232" VerticalAlignment="Top"/>
-            <PasswordBox HorizontalAlignment="Left" Margin="455,141,0,0" VerticalAlignment="Top" Width="232"/>
-            <Button FontSize="22" Content="Login" Margin="411,205,0,0" VerticalAlignment="Top" Width="229" Height="42"/>
+            <TextBox x:Name="staffUsername" HorizontalAlignment="Left" Margin="455,83,0,0" FontSize="22" PlaceholderText="Username" Height="37" Width="232" VerticalAlignment="Top"/>
+            <PasswordBox x:Name="staffPassword" HorizontalAlignment="Left" Margin="455,141,0,0" VerticalAlignment="Top" Width="232"/>
+            <Button x:Name="staffRegisterBtn" FontSize="22" Content="Login" Margin="411,205,0,0" Click="StaffRegisterBtn_Click" VerticalAlignment="Top" Width="229" Height="42"/>
+            <Button x:Name="staffLoginBtn" FontSize="22" Content="Register" Margin="745,205,0,0" Click="StaffLoginBtn_Click" VerticalAlignment="Top" Width="229" Height="42"/>
         </Grid>
 
     </Grid>

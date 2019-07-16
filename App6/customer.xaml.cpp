@@ -23,6 +23,9 @@ using namespace Windows::UI::Xaml::Input;
 using namespace Windows::UI::Xaml::Media;
 using namespace Windows::UI::Xaml::Navigation;
 
+using namespace Windows::Storage;
+using namespace concurrency;
+
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=234238
 
 customer::customer()
@@ -60,3 +63,25 @@ void App6::customer::Button_Click_4(Platform::Object^ sender, Windows::UI::Xaml:
 {
 	Frame->Navigate(customer::typeid);
 }
+
+void App6::customer::Button_Click_5(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
+{
+	Platform::String^ savingData = userName->Text + "\t" + carModel->Text + "\t" + carRegNo->Text + "\t" + userContact->Text + "\n";
+	saveFile(savingData);
+
+}
+
+static Platform::String^ saveData;
+
+int customer::saveFile(Platform::String^ toSave) {
+	saveData = toSave;
+	StorageFolder^ storageFolder = ApplicationData::Current->LocalFolder;
+	create_task(storageFolder->CreateFileAsync("customerDetails.txt", CreationCollisionOption::OpenIfExists)).then([&](StorageFile^ sampleFile) {
+		create_task(FileIO::AppendTextAsync(sampleFile, saveData + "\n"));
+	});
+	return 0;
+}
+
+
+
+

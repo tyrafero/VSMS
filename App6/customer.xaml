@@ -49,14 +49,15 @@
             </Grid.ColumnDefinitions>
             <TextBlock HorizontalAlignment="Left" FontSize="22" Margin="284,87,0,0" Text="Username:" TextWrapping="Wrap" VerticalAlignment="Top" Height="37" Width="163" RenderTransformOrigin="0.152,0.669"/>
             <TextBlock HorizontalAlignment="Left" FontSize="22" Margin="284,141,0,0" Text="Contact no.:" TextWrapping="Wrap" VerticalAlignment="Top" Height="37" Width="163" RenderTransformOrigin="0.287,0.581"/>
-            <TextBox HorizontalAlignment="Left" Margin="455,79,0,0" FontSize="22" Text="Username" Height="37" Width="232" VerticalAlignment="Top"/>
-            <Button FontSize="22" Content="Register:" Margin="411,335,0,0" VerticalAlignment="Top" Width="229" Height="42"/>
+            <TextBox x:Name="userName" HorizontalAlignment="Left" Margin="455,79,0,0" FontSize="22" Text="" Height="37" Width="232" VerticalAlignment="Top"/>
+            <Button FontSize="22" Content="Register:" Margin="411,335,0,0" VerticalAlignment="Top" Width="229" Height="42" Click="Button_Click_5"/>
             <TextBlock HorizontalAlignment="Left" FontSize="22" Margin="284,190,0,0" Text="Car Model:" TextWrapping="Wrap" VerticalAlignment="Top" Height="37" Width="163" RenderTransformOrigin="0.152,0.669"/>
-            <TextBox HorizontalAlignment="Left" Margin="455,182,0,0" FontSize="22" Text="Model" Height="37" Width="232" VerticalAlignment="Top"/>
+            <TextBox x:Name="carModel" HorizontalAlignment="Left" Margin="455,182,0,0" FontSize="22" Text="" PlaceholderText="Model" Height="37" Width="232" VerticalAlignment="Top"/>
             <TextBlock HorizontalAlignment="Left" FontSize="22" Margin="284,248,0,0" Text="Number plate:" TextWrapping="Wrap" VerticalAlignment="Top" Height="37" Width="163" RenderTransformOrigin="0.152,0.669"/>
-            <TextBox HorizontalAlignment="Left" Margin="455,133,0,0" FontSize="22" Text="Contact no." Height="37" Width="232" VerticalAlignment="Top"/>
-            <TextBox HorizontalAlignment="Left" Margin="455,240,0,0" FontSize="22" Text="Number plate" Height="37" Width="232" VerticalAlignment="Top"/>
+            <TextBox x:Name="userContact" HorizontalAlignment="Left" Margin="455,133,0,0" FontSize="22" Text="" PlaceholderText="Contact no." Height="37" Width="232" VerticalAlignment="Top"/>
+            <TextBox x:Name="carRegNo" HorizontalAlignment="Left" Margin="455,240,0,0" FontSize="22" Text="" PlaceholderText="Number plate" Height="37" Width="232" VerticalAlignment="Top"/>
         </Grid>
+
 
     </Grid>
 </Page>

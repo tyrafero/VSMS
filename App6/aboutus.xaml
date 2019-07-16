@@ -6,7 +6,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="#417e91">
+     Background="#417e91">
 
     <Grid>
         <Grid Height="55" Background="#83c3d7" VerticalAlignment="Top"/>
@@ -16,10 +16,14 @@
             <Button Content="About Us" Background=" #a2bbc2 " FontSize="22" Margin="1002,1,0,0" Width="219" Height="39" VerticalAlignment="Top" Click="Button_Click_2"/>
             <Button Content="Services Offered" Background=" #a2bbc2 " FontSize="22" Margin="508,1,0,0" Width="229" Height="39"  VerticalAlignment="Top" Click="Button_Click_1"/>
         </Grid>
-        <Grid Margin="0,144,0,100">
 
+        <Grid Margin="0,144,0,100">
+            <Rectangle Stroke="Black" StrokeThickness="6" HorizontalAlignment="Center" Height="364" VerticalAlignment="Top" Width="1260" Margin="0,20,0,0"/>
+            <TextBlock FontSize="22" HorizontalAlignment="Left" Margin="63,56,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="285" Width="1212"><Run Text="Innovative test systems for professional vehicle diagnostics"/><LineBreak/><Run/><LineBreak/><Run Text="All Bosch Car Service workshops employ the latest test techniques and digital information systems. This ideal combination ensures systematic vehicle diagnosis and qualified repair work."/><LineBreak/><Run/><LineBreak/><Run Text=": Mechanic with diagnostic unit .      "/><LineBreak/><Run Text="  Advantages for you:"/><LineBreak/><Run Text="  Enjoy the benefits of quick, precise fault diagnosis."/><LineBreak/><Run Text="  Save time and money with prompt, efficient repair work."/><LineBreak/><Run/></TextBlock>
+            
 
         </Grid>
+
         <Grid Margin="0,625,0,10" RenderTransformOrigin="0.5,0.5">
             <Grid.RenderTransform>
                 <CompositeTransform ScaleY="-1"/>
